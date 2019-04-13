@@ -24,6 +24,8 @@ requirements:
   build:
     - {{ compiler('c') }}
     - make
+    - bison
+    - flex
   host:
 
 test:
