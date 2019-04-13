@@ -34,7 +34,7 @@ about:
   home: https://www.infradead.org/~tgr/libnl/
   license: LGPL-2.1
   license_file: COPYING
-  license_family: GPL
+  license_family: LGPL
   summary: "Netlink Library Suite"
   description: |
     The libnl suite is a collection of libraries providing APIs to netlink
