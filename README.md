@@ -3,11 +3,13 @@ About libnl
 
 Home: https://www.infradead.org/~tgr/libnl/
 
-Package license: LGPL-2.1
+Package license: LGPL-2.1-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libnl-feedstock/blob/master/LICENSE.txt)
 
 Summary: Netlink Library Suite
+
+Development: https://github.com/tgraf/libnl-1.1-stable
 
 The libnl suite is a collection of libraries providing APIs to netlink
 protocol based Linux kernel interfaces. Netlink is a IPC mechanism primarly
