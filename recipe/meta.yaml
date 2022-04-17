@@ -1,5 +1,5 @@
 {% set name = "libnl" %}
-{% set version = "3.5.0" %}
+{% set version = "3.6.0" %}
 
 package:
   name: {{ name }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/thom311/libnl/releases/download/libnl{{ version | replace('.', '_') }}/libnl-{{ version }}.tar.gz
-  sha256: 352133ec9545da76f77e70ccb48c9d7e5324d67f6474744647a7ed382b5e05fa
+  sha256: 532155fd011e5a805bd67121b87a01c757e2bb24112ac17e69cb86013b970009
 
 build:
-  skip: True  # [not linux]
+  skip: true  # [not linux]
   number: 0
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=libnl
@@ -43,7 +43,7 @@ about:
   license: LGPL-2.1-or-later
   license_file: COPYING
   license_family: LGPL
-  summary: "Netlink Library Suite"
+  summary: Netlink Library Suite
   description: |
     The libnl suite is a collection of libraries providing APIs to netlink
     protocol based Linux kernel interfaces. Netlink is a IPC mechanism primarly
