@@ -1,5 +1,5 @@
 {% set name = "libnl" %}
-{% set version = "3.6.0" %}
+{% set version = "3.7.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/thom311/libnl/releases/download/libnl{{ version | replace('.', '_') }}/libnl-{{ version }}.tar.gz
-  sha256: 532155fd011e5a805bd67121b87a01c757e2bb24112ac17e69cb86013b970009
+  sha256: 9fe43ccbeeea72c653bdcf8c93332583135cda46a79507bfd0a483bb57f65939
 
 build:
   skip: true  # [not linux]
