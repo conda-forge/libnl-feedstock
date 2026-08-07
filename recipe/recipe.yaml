@@ -30,14 +30,16 @@ requirements:
     - ${{ pin_subpackage('libnl', upper_bound='x.x.x') }}
 
 tests:
-  - script:
-      - test -f "$PREFIX/lib/libnl-3.so"
-      - test -f "$PREFIX/lib/libnl-cli-3.so"
-      - test -f "$PREFIX/lib/libnl-genl-3.so"
-      - test -f "$PREFIX/lib/libnl-idiag-3.so"
-      - test -f "$PREFIX/lib/libnl-nf-3.so"
-      - test -f "$PREFIX/lib/libnl-route-3.so"
-      - test -f "$PREFIX/include/libnl3/netlink/types.h"
+  - package_contents:
+      lib:
+        - nl-3
+        - nl-cli-3
+        - nl-genl-3
+        - nl-idiag-3
+        - nl-nf-3
+        - nl-route-3
+      include:
+        - libnl3/netlink/types.h
 
 about:
   license: LGPL-2.1-or-later
