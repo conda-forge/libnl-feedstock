@@ -17,7 +17,6 @@ between the kernel and user space processes. It was designed to be a more
 flexible successor to ioctl to provide mainly networking related kernel
 configuration and monitoring interfaces.
 
-
 Current build status
 ====================
 
