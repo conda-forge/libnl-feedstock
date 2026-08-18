@@ -11,7 +11,7 @@ source:
 
 build:
   skip: true  # [not linux]
-  number: 0
+  number: 1
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=libnl
     - {{ pin_subpackage('libnl', 'x.x.x') }}
